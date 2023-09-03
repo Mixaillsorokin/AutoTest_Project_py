@@ -1,6 +1,6 @@
 address: https://test-stand.gb.ru
 sleep_time: 2
-browser: firefox
+browser: chrome
 wait: 5
 login: Rikym
 passwd: 3872ab3aed

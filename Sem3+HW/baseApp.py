@@ -1,12 +1,17 @@
+import yaml
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+
+with open("testdata.yaml") as f:
+    testdata = yaml.safe_load(f)
+    url = testdata["address"]
 
 
 class BasePage:
 
     def __init__(self, driver) -> None:
         self.driver = driver
-        self.base_url = "https://test-stand.gb.ru/"
+        self.base_url = url
 
     def find_element(self, locator, time=10):
         return WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
