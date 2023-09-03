@@ -7,12 +7,13 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
-    browser = testdata["browser"]
+    bro = testdata["browser"]
+
 
 
 @pytest.fixture(scope='session')
 def browser():
-    if browser == "firefox":
+    if bro == "firefox":
         service = Service(executable_path=GeckoDriverManager().install())
         options = webdriver.FirefoxOptions()
         driver = webdriver.Firefox(service=service, options=options)

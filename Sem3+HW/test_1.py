@@ -1,6 +1,5 @@
 import yaml
-
-from testpage_1 import OperationsHelper
+from testpage import OperationsHelper
 import logging
 import time
 
