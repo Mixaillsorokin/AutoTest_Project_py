@@ -1,0 +1,9 @@
+address: https://test-stand.gb.ru
+sleep_time: 2
+browser: firefox
+wait: 5
+login: Rikym
+passwd: 3872ab3aed
+title: New title 2023 2
+description: Какое-то описание
+content: Some bary
