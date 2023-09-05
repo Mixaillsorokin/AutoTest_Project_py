@@ -1,0 +1,10 @@
+address: https://test-stand.gb.ru
+url: https://test-stand.gb.ru/gateway/login
+sleep_time: 2
+browser: chrome
+wait: 5
+login: Rikym
+passwd: 3872ab3aed
+title: New title 2023
+description: new pis
+content: hello
